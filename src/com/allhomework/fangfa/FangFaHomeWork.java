@@ -46,7 +46,7 @@ max方法 确定
 //class A01{
 //
 //    public Double max(double[] num){//返回一个包装类Double
-//        if (num != null && num.length > 0 ){//保证并不为null并且有一个元素
+//        if (num != null && num.length > 0 ){//先保证并不为null 在规定至少有一个元素
 //            double max = num[0];
 //            for (int i = 1; i < num.length; i++){
 //                if (max < num[i]){
