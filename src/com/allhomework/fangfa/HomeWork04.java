@@ -5,15 +5,18 @@ package com.allhomework.fangfa;
  */
 public class HomeWork04 {
     public static void main(String[] args) {
-        Cale cale = new Cale(2,0);
+        Cale cale = new Cale(2,-2);
         System.out.println("和 = " + cale.sum());
         System.out.println("差 = " + cale.sub());
         System.out.println("积 = " + cale.mul());
-        double resDiv = cale.div();
-        if (cale.flag){
+//        double resDiv = cale.div();
+//        if (cale.flag){
+//            System.out.println("商 = " + cale.div());
+//        }
+        Double divRes = cale.div();
+        if (divRes != null){
             System.out.println("商 = " + cale.div());
         }
-
     }
 }
   /*
@@ -25,6 +28,7 @@ class Cale{
     double num1;
     double num2;
     boolean flag = true;
+    //加减乘除
     public Cale(double num1,double num2){
         this.num1 = num1;
         this.num2 = num2;
@@ -38,16 +42,20 @@ class Cale{
     public double mul(){//积
         return num1 * num2;
     }
-    public double div(){//商
+    public Double div(){//商
+//        if (num2 == 0){
+//            System.out.println("输入错误，除数不能为0");
+//            flag = false;
+//            return -1;
+//        }else {
+//            return num1/num2;
+//        }
         if (num2 == 0){
             System.out.println("输入错误，除数不能为0");
-            flag = false;
-            return -1;
+            return null;
         }else {
             return num1/num2;
         }
-
-
     }
 }
 
