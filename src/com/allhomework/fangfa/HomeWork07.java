@@ -38,7 +38,7 @@ class PassObject{
         //在printAreas方法中打印输出1到times之间的每个整数半径值，以及对应的面积
         System.out.println("半径\t面积");
         for (int i = 1; i <= times; i++ ){//i为半径值
-            c.setRadius(i);
+            c.setRadius(i);//修改c 对象的半径值
             System.out.println(i+"\t\t"+c.findArea());//半径和面积
         }
     }
