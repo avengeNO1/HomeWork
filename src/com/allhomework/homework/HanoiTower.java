@@ -1,4 +1,4 @@
-package com.learn.homework;
+package com.allhomework.homework;
 
 /**
  * @author HuAng
