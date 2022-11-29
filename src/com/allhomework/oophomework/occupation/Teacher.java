@@ -22,7 +22,7 @@ public class Teacher extends Employee {
     @Override
     public void printYearSalary() {
         System.out.println("姓名 " + getName() + " 职业 " + getOcc()
-                + " 年薪 " + (getDaySalary() * getWorkDay() * 12 + getClassSalary() * getWorkDay()));
+                + " 年薪 " + (getDaySalary() * getWorkDay() * 12 + classSalary * getWorkDay()));
     }
 }
 

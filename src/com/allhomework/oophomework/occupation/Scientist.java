@@ -4,6 +4,7 @@ package com.allhomework.oophomework.occupation;
  * @author HuAng
  */
 public class Scientist extends Employee {
+
     private double yearBonus;
 
     public Scientist(String occ, String name, double daySalary, int workDay) {
@@ -19,7 +20,7 @@ public class Scientist extends Employee {
     }
     public void printYearSalary(){
         System.out.println("姓名 " + getName() + " 职业 " + getOcc()
-                + " 年薪 " + (getDaySalary() * getWorkDay() * 12 + getYearBonus()));
+                + " 年薪 " + (getDaySalary() * getWorkDay() * 12 + yearBonus));
     }
 }
 

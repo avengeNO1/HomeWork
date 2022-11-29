@@ -4,11 +4,13 @@ package com.allhomework.oophomework.salarywork;
  * @author HuAng
  */
 public class Employee {//员工类
+
     private String name;
     private double daySalary;
     private int day;
     private double grade;
 
+    //构造器 getter setter 成员方法
     public Employee(String name, double daySalary, int day, double grade) {
         this.name = name;
         this.daySalary = daySalary;
@@ -47,7 +49,7 @@ public class Employee {//员工类
     public void setGrade(double grade) {
         this.grade = grade;
     }
-
+    //inputSalary()输出工资的方法
     public double inputSalary(){
         return daySalary;
     }
